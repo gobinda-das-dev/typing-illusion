@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #FBF0D4;
+  --primary: #f2e0bf;
+  --secondary: #8f2d4d;
+  --text: rgb(215 26 116);
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+}
+
+.keys.active {
+  transform: translate(4px, 4px);
+  box-shadow: none;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: 2px solid var(--text);
+}
